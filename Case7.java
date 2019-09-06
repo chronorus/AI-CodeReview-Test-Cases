@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+
 import org.springframework.web.bind.annotation.RequestMapping;
 /**
  *
@@ -16,4 +17,5 @@ public class Case7 {
     public String greet(String greetee) {
         return null;
     }
+   
 }
