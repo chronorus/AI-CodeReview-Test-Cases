@@ -1,0 +1,28 @@
+/*
+44. "enum" fields should not be publicly mutable
+*/
+
+/**
+ *
+ * @author john
+ */
+public class Case44 {
+    public enum Continent {
+
+      NORTH_AMERICA (23, 24709000),
+      // ...
+      EUROPE (50, 39310000);
+
+      public int countryCount;  // Noncompliant
+      private int landMass;
+
+      Continent(int countryCount, int landMass) {
+        // ...
+      }
+
+      public void setLandMass(int landMass) {  // Noncompliant
+        this.landMass = landMass;
+      }
+    }
+    
+}
