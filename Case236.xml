@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+<bean id="listenerContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">  <!-- Noncompliant -->
+   <property name="connectionFactory" ref="connFactory" />
+   <property name="destination" ref="dest" />
+   <property name="messageListener" ref="serviceAdapter" />
+   <property name="autoStartup" value="true" />
+   <property name="concurrentConsumers" value="10" />
+   <property name="maxConcurrentConsumers" value="10" />
+   <property name="clientId" value="myClientID" />
+</bean>
+    
+</root>
