@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+49. Security constraints should be defined This rule raises an issue when a web.xml file has no <security-constraint> elements.
+-->
+
+
+<root>
+    
+</root>
