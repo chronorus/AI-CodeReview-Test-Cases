@@ -1,3 +1,6 @@
+
+import java.util.Optional;
+
 /*
 238. Value-based classes should not be used for locking
  */
@@ -13,4 +16,9 @@ public class Case238 {
           // ...
         }
     }
+    
+    public Optional<Foo> doSomething() {
+        return null;
+    }
+    
 }
